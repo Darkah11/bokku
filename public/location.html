@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../app/globals.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: "#001DDD",
+              primary: "rgb(255 240 1)",
+              dark: "#374151",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .dropdown:hover > .dropdown-menu {
+        display: block;
+      }
+      .dropdown:hover > .dropdown-arrow {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="flex relative justify-between items-center xl:px-24 lg:px-10 py-4 nav px-5 bg-main z-50 border-b-[10px] border-b-primary"
+    >
+      <a href="/">
+        <image alt="logo" src="/logo.png" class="w-[120px]" />
+      </a>
+
+      <div class="md:hidden">
+        <button class="w-[30px] flex flex-col gap-2">
+          <span class="w-full bg-header-10 h-[2px]"></span>
+          <span class="w-full bg-header-10 h-[2px]"></span>
+          <span class="w-full bg-header-10 h-[2px]"></span>
+        </button>
+      </div>
+
+      <ul
+        class="md:flex md:items-center gap-2 lg:gap-4 hidden text-center text-primary font-medium list-none"
+      >
+        <li>
+          <a class="" href="/"> Home </a>
+        </li>
+        <li>
+          <a href="/work-with-us">Work With Us</a>
+        </li>
+        <li
+          class="relative dropdown cursor-pointer flex flex-row items-center gap-2"
+        >
+          <p>Partner With Us</p>
+          <img
+            class="dropdown-arrow w-5 h-5"
+            src="/down-arrow.png"
+            width="{50}"
+            height="{50}"
+            alt="arrow"
+          />
+          <ul
+            class="list-none hidden absolute top-6 w-[230px] bg-gray-200 bg-opacity-70 text-black text-left px-5 py-4 rounded-sm dropdown-menu"
+          >
+            <li>
+              <a href="/suppliers" class="block py-1">Suppliers</a>
+            </li>
+            <li>
+              <a href="/landlord" class="block py-1">Landlords and Agencies</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="location.html">Location</a>
+        </li>
+        <li>
+          <a href="https://evgdoctoral.com/blog">About Us</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div
+        id="storerocket-widget"
+        style="width: 100%"
+        data-storerocket-env="p"
+        data-storerocket-id="Yw8lrx64vo"
+      >
+        <p style="text-align: center; font-size: 13px; padding: 10px">
+          Store locator is loading from StoreRocket
+          <a
+            target="_blank"
+            href="https://storerocket.io"
+            style="font-size: 13px"
+            >Store Locator App</a
+          >..
+        </p>
+      </div>
+      <script>
+        (function () {
+          var a = document.createElement("script");
+          a.type = "text/javascript";
+          a.async = !0;
+          a.src = "https://cdn.storerocket.io/js/widget-mb.js";
+          var b = document.getElementsByTagName("script")[0];
+          b.parentNode.insertBefore(a, b);
+        })();
+      </script>
+    </main>
+    <footer class=' bg-main py-8 text-white'>
+        <p class=' text-primary text-center font-semibold'>Get In Touch</p>
+        <div class=' flex items-center justify-center gap-4 my-3'>
+            <a href=''>
+            <img src='./icons8-whatsapp.svg' alt='whatsapp' class=' w-10 h-10'/></a>
+            <a href=''>  <img src='./icons8-instagram.svg' alt='instagram' class=' w-10 h-10'/></a>
+            <a href=''>  <img src='./icons8-twitterx.svg' alt='twitterx' class=' w-10 h-10'/></a>
+            <a href=''>  <img src='./icons8-whatsapp.svg' alt='whatsapp' class=' w-10 h-10'/></a>
+        </div>
+        <p class=' text-center'>© Copyright 2024. All Rights Reserved. | Privacy Policy | Disclaimer</p>
+    </footer>
+  </body>
+</html>
