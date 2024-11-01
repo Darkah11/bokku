@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "@nextui-org/accordion": "^2.0.40",
-    "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "next": "14.2.14",
+    "react": "^18",
+    "react-dom": "^18",
     "react-multi-carousel": "^2.8.5",
-    "react-slideshow-image": "^4.3.2"
+    "react-slideshow-image": "^4.3.2",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "eslint": "^8",
