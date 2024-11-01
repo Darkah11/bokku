@@ -31,10 +31,14 @@ export default function Navbar() {
 				<Image className=" dropdown-arrow w-5 h-5" src={'/down-arrow.png'} width={50} height={50} alt="arrow"/>
 				<ul className=" list-none hidden absolute top-6 w-[230px] bg-gray-200 bg-opacity-70 text-black text-left px-5 py-4 rounded-sm dropdown-menu">
 					<li>
-						<Link href={"/suppliers"} className=" block py-1">Suppliers</Link>
+						<Link href={"/suppliers"} className=" block py-1">
+							Suppliers
+						</Link>
 					</li>
 					<li>
-						<Link href={"/landlord"} className=" block py-1">Landlords and Agencies</Link>
+						<Link href={"/landlord"} className=" block py-1">
+							Landlords and Agencies
+						</Link>
 					</li>
 				</ul>
 			</li>
