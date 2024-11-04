@@ -12,6 +12,7 @@
     "@nextui-org/accordion": "^2.0.40",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
+    "react-accessible-accordion": "^5.0.0",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
     "react-multi-carousel": "^2.8.5",
     "react-slideshow-image": "^4.3.2"

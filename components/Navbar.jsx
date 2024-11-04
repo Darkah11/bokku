@@ -12,13 +12,13 @@ export default function Navbar() {
 
       <div className=" md:hidden">
         <button className=" w-[30px] flex flex-col gap-2">
-          <span className="w-full bg-header-10 h-[2px]"></span>
-          <span className="w-full bg-header-10 h-[2px]"></span>
-          <span className="w-full bg-header-10 h-[2px]"></span>
+          <span className="w-full bg-primary-10 h-[2px]"></span>
+          <span className="w-full bg-primary-10 h-[2px]"></span>
+          <span className="w-1/2 bg-primary-10 h-[2px]"></span>
         </button>
       </div>
 
-      <ul className=" md:flex md:items-center gap-2 lg:gap-4 hidden text-center text-primary-10 font-medium list-none">
+      <ul className=" md:flex md:items-center gap-5 lg:gap-4 hidden text-center text-primary-10 font-medium list-none">
         <li>
           <Link className="" href={"/meet&grow"}>
             Home
@@ -43,6 +43,10 @@ export default function Navbar() {
         </li>
         <li>
           <Link href={"/about-us"}>About Us</Link>
+        </li>
+        <li>
+          <Link href={"/"}>
+          <Image src={'/globe.png'} width={50} height={50} alt="globe image" className=" w-5"/></Link>
         </li>
       </ul>
     </nav>

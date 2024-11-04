@@ -3,6 +3,7 @@ import supply from "@/public/supply.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import Faq from "@/components/Faq";
+import Faqs from "@/components/Faq";
 
 export default function Suppliers() {
     const data = ([
@@ -122,7 +123,7 @@ export default function Suppliers() {
         </div>
         <div className=" bg-gray-100 px-5 py-10 mt-10">
             <h2 className=" aest">Frequently Asked Questions</h2>
-        <Faq data={data} style={itemClasses}/>
+        <Faqs data={data} styles={itemClasses}/>
         </div>
       </section>
     </div>
